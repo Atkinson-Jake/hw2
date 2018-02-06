@@ -34,6 +34,19 @@ let blockchain = [
 // Ben's KelloggCoin balance is 10350
 // Jeff's KelloggCoin balance is 2650
 
+let balances = {
+  brian: 0, ben: 0, jeff: 0
+}
+
+for (var i = 0; i < blockchain.length; i++) {
+  balances[blockchain[i].fromUser] -= blockchain[i].amount
+  balances[blockchain[i].toUser] += blockchain[i].amount
+}
+
+let getBalance = function(name) {
+  return balances[name]
+}
+
 console.log("Brian's KelloggCoin balance is " + getBalance("brian"));
 console.log("Ben's KelloggCoin balance is " + getBalance("ben"));
 console.log("Jeff's KelloggCoin balance is " + getBalance("jeff"));
