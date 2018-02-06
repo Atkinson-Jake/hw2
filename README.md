@@ -10,3 +10,5 @@
 5. Using the GitHub Desktop app, create a new repository (File -> New Repository). The name should be `hw2` and the local path should be your code folder – i.e. `/Users/<your username>/code` (Mac) or `\code` (Windows).
 6. Complete the homework per the instructions in the `hw2.js` file.
 7. Commit and publish your `hw2` repository to your GitHub account. The finished product should live at `https://github.com/<your GitHub username>/hw2`.
+
+Change
